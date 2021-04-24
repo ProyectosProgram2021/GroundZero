@@ -1,0 +1,30 @@
+body {
+    
+   /* background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg");*/
+}
+
+main {
+   /* background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg"); */
+}
+
+header {
+    background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg");
+}
+
+h1 {
+    font-family: cute blackout;  
+    font-size: 4em;
+    
+}
+
+#carrusel {
+    -webkit-box-shadow: 1px 1px 3px 3px #B3B8AE;
+    box-shadow: 1px 1px 3px 3px #B3B8AE;
+}
+
+.nav-link {    
+    margin-left: 10px;
+    font-family: monggo pinarak;
+      
+}
+
