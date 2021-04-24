@@ -1,30 +1,48 @@
 body {
-    
+    background-position: bottom;
    /* background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg");*/
 }
 
 main {
-   /* background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg"); */
+  /*  background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg"); */
 }
 
 header {
-    background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg");
+    /*background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg"); */
+    font-family: 'Orbitron', sans-serif;
 }
 
-h1 {
-    font-family: cute blackout;  
-    font-size: 4em;
-    
+h1 {    
+    font-weight: 900;    
+    color: rgba(22, 8, 8, 0.589);
+    text-shadow: 1px 1px 12px #375A6E;
 }
 
 #carrusel {
-    -webkit-box-shadow: 1px 1px 3px 3px #B3B8AE;
-    box-shadow: 1px 1px 3px 3px #B3B8AE;
+    -webkit-box-shadow: 2px 2px 5px 5px #B3B8AE;
+    box-shadow: 2px 2px 5px 5px #B3B8AE;
+    
+}
+
+#carouselExampleCaptions {
+    margin: 0  auto;
 }
 
 .nav-link {    
     margin-left: 10px;
-    font-family: monggo pinarak;
-      
+    font-size: 0.8em;      
 }
 
+#cards{  
+    margin-top: 45%;
+    margin-bottom: 5%;
+}
+
+.foter{
+    padding-top: 2%;
+    padding-left: 10%;
+}
+
+#navbarDropdownMenuLink {
+    font-size: 1.5em;
+}
