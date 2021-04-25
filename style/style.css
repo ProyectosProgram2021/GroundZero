@@ -4,18 +4,25 @@ body {
 }
 
 main {
+    
   /*  background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg"); */
 }
 
 header {
     /*background-image: url("/img/—Pngtree—simple\ hand-painted\ chinese\ style\ banner_1090538.jpg"); */
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+#nav-item {    
+    font-weight: 100;
 }
 
-h1 {    
-    font-weight: 900;    
-    color: rgba(22, 8, 8, 0.589);
-    text-shadow: 1px 1px 12px #375A6E;
+#dropdown-item {    
+    font-weight: 100;
+}
+
+#btn {    
+    font-weight: 100;
 }
 
 #carrusel {
@@ -34,7 +41,7 @@ h1 {
 }
 
 #cards{  
-    margin-top: 45%;
+    margin-top: 10%; 
     margin-bottom: 5%;
 }
 
