@@ -27,9 +27,9 @@ header {
 
 #carrusel {
     -webkit-box-shadow: 2px 2px 5px 5px #B3B8AE;
-    box-shadow: 2px 2px 5px 5px #B3B8AE;
-    
+    box-shadow: 2px 2px 5px 5px #B3B8AE;    
 }
+
 
 #carouselExampleCaptions {
     margin: 0  auto;
@@ -53,3 +53,25 @@ header {
 #navbarDropdownMenuLink {
     font-size: 1.5em;
 }
+
+#table {
+    background-color: #ffd369;  
+}
+
+a:link { 
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none; 
+    }
+
+a:hover {
+    text-decoration: none; 
+    }
+
+a:active {
+    text-decoration: none;
+    }
+
