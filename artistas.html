@@ -40,50 +40,101 @@
         </div>
       </nav>  
   </header>    
-  <main class="pt-5">
-      <div class="row ms-2 me-2 justify-content-center">
-          <div class="col-lg-8 col-md-12 col-12">
-              <h1>Nuestro Equipo</h1>
-            <div class="container-flex ">
-                <table class="table table-borderless table-hover my-5">
-                    <thead>
-                    <tr>                      
-                        <th scope="col">#</th>                      
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Estilo</th>
-                        <th scope="col">Nro de obras</th>                      
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td><a href="Artista1.html">Artista 1</a> </td>
-                        <td>Arte Abstracto</td>
-                        <td>3</td>                    
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td><a href="Artista2.html">Artista 2</a></td>
-                        <td>Fotografía digital</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td><a href="Artista3.html">Artista 3</a></td>
-                        <td>Fotografía urbana, muralismo</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td><a href="Artista4.html">Artista 4</a></td>
-                        <td>Ilustración Digital</td>
-                        <td>1</td>
-                    </tr>
-                    </tbody>
-                </table>
+  <main class="container-fluid py-5">
+    <div class="row my-5">
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div class="card-header bg-dark text-light">
+            <span>Registrar artista</span>
+          </div>
+          <div class="card-body">
+            <form id="form-artista">
+              <div class="mb-3 has-validation">
+                <label for="nombre-txt" class="form-label">Nombre</label>
+                <input type="text" id="nombre-txt" class="form-control">
+                <div class="invalid-feedback">
+                  Ingrese el nombre
+                </div>              
+              </div>
+              <div class="mb-3">
+                <label for="estilo-select" class="form-label">Estilo</label>
+                <select class="row mx-0 my-2" type="form-select" id="estilo-select">
+                  <option value="1">Arte abstracto</option>
+                  <option value="2">Fotografía digital</option>
+                  <option value="3">Fotografía urbana</option>
+                  <option value="4">Ilustración Digital</option>
+                  <option value="5">Muralismo</option>
+                  <option value="6">Otro</option>
+                </select>
+              </div>
+              <div class="mb-3 ">
+                <label for="obras-select">Numero de obras del artista</label>
+                <select class="row my-2 mx-0" type="form-select" id="obras-select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <div class="row mt-5">
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-success">Registrar</button>
+                    </div>
+                    <div class="col text-end">
+                        <button type="button" class="btn btn-warning" id="limpiar-btn">Limpiar</button>
+                    </div>
+                </div>
             </div>
-        </div>  
+            </form>
+          </div>
+        </div>
       </div>
+      <div class="col-lg col-md col">
+        <div class="card">
+          <div class="card-header bg-dark text-light">
+            <span>Nuestros exponentes</span>
+          </div>
+          <div class="card-body">
+            <table class="table table-hover table-bordered table-stripped">
+              <thead>
+                  <tr>
+                      <th>Nro</th>
+                      <th>Nombre</th>
+                      <th>Estilo</th>
+                      <th>Nro de Obras</th>                      
+                  </tr>
+              </thead>
+              <tbody id="tbody-artista">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Artista 1 </td>
+                  <td>Arte Abstracto</td>
+                  <td>3</td>                    
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>Artista 2</td>
+                  <td>Fotografía digital</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <th scope="row">3</th>
+                  <td>Artista 3</td>
+                  <td>Fotografía urbana, muralismo</td>
+                  <td>2</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td>Artista 4</td>
+                  <td>Ilustración Digital</td>
+                  <td>1</td>
+              </tr>
+              </tbody>
+          </table>
+          </div>        
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="foter bg-dark text-white pt-5 mt-ms-5 " >
     <div class="row">
@@ -131,6 +182,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="js/artistas.js"></script>
 </body>
 </html>
