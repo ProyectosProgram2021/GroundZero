@@ -60,117 +60,214 @@
         <div id="contenedor-producto" class="row">
 
         </div>
-  
-          <div id="moldes" class="d-none">
-            <div class="col-lg-3 col-md-6 col-12 pt-2 molde-producto">
-              <div class="card text-center">
-                  <div class="card-header bg-dark bg-gradient text-center text-white-50">
-                      <span class="nombre-producto"></span>
-                  </div>
-                  <div class="card-body">
-                      <img src="img/pexels-rebecca-diack-1154723.jpg" class="card-img imagen-producto w-50" alt="...">
-                      <h4 class="descripcion-producto"></h4>
-                      <h4 class="tipo-arte"></h4>
-                      <h5 class="nombre-artista"></h5>
-                      <h6 class="producto-precio"></h6>
-                  </div>
-                  <div class="card-footer ">
-                    <div class="mb-2">
-                      <div class="row mt-2">
-                          <div class="col-6">
-                              <a href="#" class="btn btn-primary btn-ver-producto">Ver Producto</a>
-                          </div>
-                          <div class="col text-end">
-                              <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
-                          </div>
+        <div class="row mx-2 my-4 molde-producto" id="filasSeparacion">
+            <div class="col-md-12 col-sm-12 col-xs-12 ">
+                <div class="card-group ms-2 me-2" >
+                    <div class="card me-2">
+                      <img src="img/pexels-rebecca-diack-1154723.jpg" class="card-img-top " alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Burbujas</h5>
+                        <p class="card-text">Digital, artista 2</p>
                       </div>
-                  </div>   
-                </div>
-              </div>
-            </div>
-            <div class="molde-detalle">
-              <div class="row">
-                <div class="col">
-                  <h3 class="nombre-sa-producto">Personaje</h3>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <img class="imagen-sa-producto w-75" src="img/pexels-rebecca-diack-1154723.jpg" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <i class="descripcion-sa-producto"></i>
-                </div>
-              </div>
-              <div class="row">
-                  <a href="#" class="btn btn-primary btn-ver-producto">Ver Mas</a>
-              </div>
-            </div>
-          </div>
-         
-  
-          <div class="col-lg-4 col-md-6 col-12 mt-5 mb-5">
-              <div class="card">
-                  <div class="card-header bg-warning text-light">
-                      <span>Registrar Producto</span>
-                  </div>
-                  <div class="card-body">
-                      <form id="producto-form">
-                          <div class="mb-3 has-validation">
-                              <label for="nombre-txt" class="form-label">Nombre</label>
-                              <input type="text" id="nombre-txt" class="form-control">
-                              <div class="invalid-feedback">
-                                  Por favor ingrese nombre
+                      <div class="card-footer">
+                        <div class="mb-2">
+                          <div class="row mt-2">
+                              <div class="col-6">
+                                  <a href="#" class="btn btn-primary btn-ver-producto">Ver Producto</a>
+                              </div>
+                              <div class="col text-end">
+                                  <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
                               </div>
                           </div>
-                          <div class="mb-3 has-validation">
-                              <label for="descripcion-txt" class="form-label">Descripcion</label>
-                              <textarea  id="descripcion-txt" ></textarea>
-                              <div class="invalid-feedback">
-                                  Por favor ingrese una descripcion
+                      </div> 
+                      </div>
+                    </div>
+                    <div class="card me-2">
+                      <img src="img/pexels-sharon-mccutcheon-1191710.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Escarcha de colores</h5>
+                        <p class="card-text">Fotografía digital en movimiento, Artista 2 </p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="mb-2">
+                          <div class="row mt-2">
+                              <div class="col-6">
+                                  <a href="escarcha-colores.html" class="btn btn-primary btn-ver-producto2">Ver Producto</a>
+                              </div>
+                              <div class="col text-end">
+                                  <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
                               </div>
                           </div>
-                          <div class="mb-3">
-                              <label for="tipo-select" class="mb-1 form-label">Tipo de arte</label>
-                              <select class="form-select" id="tipo-select">
-                                  <option value="1">Moderno</option>
-                                  <option value="2">Comteporaneo</option>
-                                  <option value="3">Digital</option>
-                                  <option value="4">Abstracto</option>
-                              </select>
-                          </div>
-                          <div class="mb-3 has-validation">
-                            <label for="artista-txt" class="form-label">Artista</label>
-                            <input type="text" id="artista-txt" class="form-control">
-                            <div class="invalid-feedback">
-                                Por favor ingrese artista
-                            </div>
+                      </div> 
+                    </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/pexels-steve-johnson-1109354.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Pintura Abstracta</h5>
+                          <p class="card-text">Óleo sobre tela, Artista 1</p>
                         </div>
-                        <div class="mb-3 has-validation">
-                          <label for="precio-txt" class="form-label">Precio</label>
-                          <input type="text" id="precio-txt" class="form-control">
-                          <div class="invalid-feedback">
-                              Por favor ingrese precio
-                          </div>
-                       </div>
+                        <div class="card-footer">
                           <div class="mb-2">
-                              <div class="row mt-2">
-                                  <div class="col-6">
-                                      <button type="submit" class="btn btn-success">Registrar</button>
-                                  </div>
-                                  <div class="col text-end">
-                                      <button type="button" id="limpiar-btn" class="btn btn-info">Limpiar</button>
-                                  </div>
+                            <div class="row mt-2">
+                                <div class="col-6">
+                                    <a href="pintura-abstracta.html" class="btn btn-primary btn-ver-producto3">Ver Producto</a>
+                                </div>
+                                <div class="col text-end">
+                                    <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
+                                </div>
+                            </div>
+                        </div> 
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mx-2 my-4 molde-producto" id="filasSeparacion">
+            <div class="col-md-12 col-sm-12 col-xs-12 ">
+                <div class="card-group ms-2 me-2" >
+                    <div class="card me-2">
+                      <img src="img/pexels-steve-johnson-1269968.jpg" class="card-img-top " alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Naranja, rojo y azul</h5>
+                        <p class="card-text">Arte abstracto en óleo sobre tela, Artista 1</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="mb-2">
+                          <div class="row mt-2">
+                              <div class="col-6">
+                                  <a href="naranjo-rojo-azul.html" class="btn btn-primary btn-ver-producto4">Ver Producto</a>
+                              </div>
+                              <div class="col text-end">
+                                  <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
                               </div>
                           </div>
-                      </form>
+                      </div> 
+                      </div>
+
+                    </div>
+                    <div class="card me-2">                      
+                      <img src="img/pexels-steve-johnson-1292241.jpg" class="card-img-top" alt="...">                                          
+                      <div class="card-body">
+                        <h5 class="card-title">Azúl, blanco y naranjo</h5>
+                        <p class="card-text">Acuarela sobre tela, Artista 1</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="mb-2">
+                          <div class="row mt-2">
+                              <div class="col-6">
+                                  <a href="#" class="btn btn-primary btn-ver-producto5">Ver Producto</a>
+                              </div>
+                              <div class="col text-end">
+                                  <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
+                              </div>
+                          </div>
+                      </div> 
+                      </div>
+                    </div>
+                    <div class="card">                      
+                      <img src="img/pexels-thiago-japyassu-929032.jpg" class="card-img-top" alt="...">                                            
+                      <div class="card-body">
+                        <h5 class="card-title">Botes de color</h5>
+                        <p class="card-text">Fotografía digital, Artista 2</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="mb-2">
+                          <div class="row mt-2">
+                              <div class="col-6">
+                                  <a href="#" class="btn btn-primary btn-ver-producto6">Ver Producto</a>
+                              </div>
+                              <div class="col text-end">
+                                  <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
+                              </div>
+                          </div>
+                      </div> 
+                      </div>
+                    </div>
                   </div>
-              </div>
+            </div>
+        </div>
+        <div class="row mx-2 my-4 molde-producto" id="filasSeparacion">
+            <div class="col-md-12 col-sm-12 col-xs-12 ">
+                <div class="card-group ms-2 me-2" >
+                    <div class="card me-2">
+                      <img src="img/pexels-toa-heftiba-şinca-1194420.jpg" class="card-img-top " alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Muro con grafiti</h5>
+                        <p class="card-text">fotografía selectiva, Artista 3</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="mb-2">
+                          <div class="row mt-2">
+                              <div class="col-6">
+                                  <a href="#" class="btn btn-primary btn-ver-producto7">Ver Producto</a>
+                              </div>
+                              <div class="col text-end">
+                                  <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
+                              </div>
+                          </div>
+                      </div> 
+                      </div>
+                    </div>
+                    <div class="card me-2">                      
+                        <img src="img/pexels-w-w-889839.jpg" class="card-img-top" alt="...">                                           
+                      <div class="card-body">
+                        <h5 class="card-title">Lágrimas</h5>
+                        <p class="card-text">Mural urbano, Artista 3</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="mb-2">
+                          <div class="row mt-2">
+                              <div class="col-6">
+                                  <a href="#" class="btn btn-primary btn-ver-producto8">Ver Producto</a>
+                              </div>
+                              <div class="col text-end">
+                                  <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
+                              </div>
+                          </div>
+                      </div> 
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="img/pexels-aleksandr-slobodianyk-989946.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Plumas blancas</h5>
+                        <p class="card-text">Ilustración Digital, Artista 4</p>
+                      </div>
+                      <div class="card-footer">
+                        <div class="mb-2">
+                          <div class="row mt-2">
+                              <div class="col-6">
+                                  <a href="#" class="btn btn-primary btn-ver-producto9">Ver Producto</a>
+                              </div>
+                              <div class="col text-end">
+                                  <a href="#" class="btn btn-primary btn-agregar-carrito">Agregar Carrito</a>
+                              </div>
+                          </div>
+                      </div> 
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="molde-detalle d-none">
+          <div class="row">
+            <div class="col">
+              <h3 class="nombre-sa-producto">Producto</h3>
+            </div>
           </div>
-          
-            
+          <div class="row">
+            <div class="col">
+              <img class="imagen-sa-producto w-75" src="img/pexels-sharon-mccutcheon-1191710.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3 class="nombre-sa-producto">Descripcion</h3>
+            </div>
+          </div>
+          <a href="burbujas.html" class="btn btn-primary btn-ver-producto10">Ver producto</a>
+      </div>
         <div>
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
@@ -181,9 +278,7 @@
                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
                 </ul>
             </nav>
-        </div>
-        
-          
+        </div>    
     </main>
     <footer class="foter bg-dark text-white pt-5 mt-ms-5 " >
       <div class="row">
@@ -234,11 +329,9 @@
 
   </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="js/sala.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sala2.js"></script>
 
   </body>
 </html>

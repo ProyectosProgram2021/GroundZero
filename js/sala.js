@@ -56,6 +56,7 @@ document.querySelector("#producto-form").addEventListener('submit', (e)=>{
     document.querySelector("#precio-txt").classList.add("is-invalid");
     esValido = false;
   }
+
   if (esValido){
     let producto ={};
     producto.nombre = nombre; 
@@ -75,7 +76,7 @@ const cargarProductos = async function(){
     let contenedor = document.querySelector("#contenedor-producto");
     let molde  = document.querySelector(".molde-producto");
     
-    
+    let copia = molde.cloneNode(true); 
     /*molde.querySelector(".nombre-producto").innerText ="";
     molde.querySelector(".descripcion-producto").innerHTML = "";
     molde.querySelector(".imagen-producto").src = "";
@@ -83,15 +84,21 @@ const cargarProductos = async function(){
     molde.querySelector(".producto-precio").innerText = "";*/
     
     productos.forEach(p =>{
-        let copia = molde.cloneNode(true); 
+        
         copia.querySelector(".nombre-producto").innerText = p.nombre;
         copia.querySelector(".descripcion-producto").innerHTML = p.descripcion;
-        molde.querySelector(".imagen-producto").src;
+        
         copia.querySelector(".nombre-artista").innerText = p.artista;
+        /*if(p.tipo == '1'){
+          copia.appendChild(".imagen-sa-producto").src = 'pexels-sharon-mccutcheon-1191710';
+        }*/
         copia.querySelector(".producto-precio").innerText = p.precio;
         copia.querySelector(".btn-ver-producto").verproducto = p;
         copia.querySelector(".btn-ver-producto").addEventListener("mouseover", mostrarProducto);
+
+
         contenedor.appendChild(copia);
+
     });
     
 };
