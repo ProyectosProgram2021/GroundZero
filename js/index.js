@@ -1,3 +1,42 @@
+tinymce.init({
+    selector: '#desc-txt',
+    height: 200,
+    menubar: false,
+    plugins: [
+      'advlist autolink lists link image charmap print preview anchor',
+      'searchreplace visualblocks code fullscreen',
+      'insertdatetime media table paste code help wordcount'
+    ],
+    toolbar: 'undo redo | formatselect | ' +
+    'bold italic backcolor | alignleft aligncenter ' +
+    'alignright alignjustify | bullist numlist outdent indent | ' +
+    'removeformat | help',
+    content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+  });
+
+const mostrarPersonaje = function(){
+    
+    const molde = document.querySelector(".molde-detalle").cloneNode(true);
+    Swal.fire({
+        html: molde.innerHTML
+    })
+};
+const cargarProductos = function(){
+    const contenedor = document.querySelector("#contenedor-personajes");
+    const molde = document.querySelector(".molde-personaje");
+    let copia = molde.cloneNode(true); 
+    for (var i = 0; i < 9; i++) {
+    copia.querySelector(".btn-ver-producto").addEventListener("mouseover", mostrarPersonaje);
+    contenedor.appendChild(copia);
+    }
+};
+
+
+document.addEventListener("DOMContentLoaded", ()=>{
+
+    cargarProductos();
+});
+
 const artistas = [];
 const eliminar = async function(){
 
@@ -92,3 +131,7 @@ document.querySelector("#limpiar-btn").addEventListener("click", () =>{
     document.querySelector("#estilo-select").value = "1";
     document.querySelector("#obras-select").value = "1";
   });
+
+
+
+

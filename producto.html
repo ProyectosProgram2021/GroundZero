@@ -30,32 +30,38 @@
         <title>Ground Zero</title>
       </head>
       <body >
-        <header class="sticky-top ">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="img/GZ-logo.png " style ="width: 50%; border-radius: 6px; opacity: 0.85;" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link fs-5" aria-current="page" href="index.html">Inicio</a>
-                  <a class="nav-link fs-5 active" href="sala.html">Productos</a>
-                  <a class="nav-link fs-5" href="about.html">Sobre nosotros</a>       
-                  <a class="nav-link fs-5" href="artistas.html">Exponentes</a>  
-                </div>
-                <div class="col text-end align-middle pt-3">
-                  <a href="iniciar-sesion.html" class="btn btn-outline-light btn-sm my-1">Iniciar Sesion</a>
-                  <a href="registro.html" class="btn btn-outline-success btn-sm my-1">Resgistrarse</a>
-                  /
-                  <a href="carrito.html" class="btn btn-sm my-1"><img src="img/carrito.png" alt=""></a>
-                </div>
-              </div>
+            <header class="sticky-top ">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/GZ-logo.png " style ="width: 50%; border-radius: 6px; opacity: 0.85;" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link fs-5 active" aria-current="page" href="index.html">Inicio</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-light" href="sala.html">Sala</a></li> 
+                  <li><a class="dropdown-item text-light" href="producto.html">Agregar Obra</a></li> 
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link fs-5" href="about.html">Sobre nosotros</a> </li>      
+              <li class="nav-item pr-5"><a class="nav-link fs-5" href="artistas.html">Exponentes</a></li>
+            </ul>  
+            <div class="col text-end align-middle pt-3">
+              <a href="iniciar-sesion.html" class="btn btn-outline-light btn-sm my-1">Iniciar Sesion</a>
+              <a href="registro.html" class="btn btn-outline-success btn-sm my-1">Resgistrarse</a>
+              /
+              <a href="carrito.html" class="btn btn-sm my-1"><img src="img/carrito.png" alt=""></a>
             </div>
-          </nav>  
-      </header>        
+          </div>
+        </div>
+      </nav>  
+  </header>     
       <main class="mt-5">
         <div id="contenedor-producto" class="row">
 
@@ -68,7 +74,7 @@
                       <span class="nombre-producto"></span>
                   </div>
                   <div class="card-body">
-                      <img src="img/pexels-sharon-mccutcheon-1191710.jpg" class="card-img imagen-producto w-50" alt="...">
+                      <img src="" class="card-img imagen-producto w-50" alt="...">
                       <h4 class="descripcion-producto"></h4>
                       <h4 class="tipo-arte"></h4>
                       <h5 class="nombre-artista"></h5>
@@ -91,12 +97,12 @@
             <div class="molde-detalle">
               <div class="row">
                 <div class="col">
-                  <h3 class="nombre-sa-producto">Personaje</h3>
+                  <h3 class="nombre-sa-producto">Producto</h3>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <img id="imagen-cambiar" class="imagen-sa-producto w-75" src="img/pexels-sharon-mccutcheon-1191710.jpg" alt="">
+                  <img id="imagen-cambiar" src="" class="imagen-sa-producto w-75" alt="">
                 </div>
               </div>
               <div class="row">
@@ -155,6 +161,15 @@
                               Por favor ingrese precio
                           </div>
                        </div>
+                        <div class="my-3 has validation">
+                          <div class="row my-1">
+                            <label for="file-selector" class="form-label">Sube tu obra aquí</label> 
+                          </div>
+                          <div class="row my-1">
+                            <input type="file" id="file-selector" multiple>                            
+                            <img src="" id="imagen-resultante">
+                          </div>                         
+                        </div>
                           <div class="mb-2">
                               <div class="row mt-2">
                                   <div class="col-6">
